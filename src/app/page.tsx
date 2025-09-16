@@ -3,6 +3,7 @@
 import FirstSection from "@/components/sections/first-section";
 import HeroSection from "@/components/sections/hero-section";
 import { SecondSection } from "@/components/sections/second-section";
+import { ThirdSection } from "@/components/sections/third-section";
 
 export default function Home() {
 	return (
@@ -10,6 +11,7 @@ export default function Home() {
 			<HeroSection />
 			<FirstSection />
 			<SecondSection />
+			<ThirdSection />
 		</div>
 	);
 }
