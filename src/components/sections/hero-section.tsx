@@ -44,8 +44,11 @@ const HeroSection = () => {
 		<div className="w-full h-full relative snap-start">
 			<ThreeDMarquee images={images} />
 			<div className="absolute inset-0 bg-black opacity-70 pointer-events-none flex items-center justify-center flex-col gap-y-4">
-				<h1 className="text-white text-8xl font-bold text-center w-full">CHUNG TAY - ĐỒNG HÀNH</h1>
-				<p className="text-white text-2xl text-center w-full font-medium">
+				<h1 className="text-white text-8xl font-bold text-center w-full font-bangers">
+					<span className="text-red-500">CHUNG</span> <span className="text-yellow-400">TAY</span> -{" "}
+					<span className="text-red-500">ĐỒNG</span> <span className="text-yellow-400">HÀNH</span>
+				</h1>
+				<p className="text-white text-3xl text-center w-full font-medium font-bangers">
 					Tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam và Nhà nước của nhân dân, do nhân dân, vì
 					nhân dân
 				</p>
