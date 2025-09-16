@@ -1,9 +1,10 @@
 "use client";
 
 import FirstSection from "@/components/sections/first-section";
+import { FourthSection } from "@/components/sections/fourth-section";
 import HeroSection from "@/components/sections/hero-section";
 import { SecondSection } from "@/components/sections/second-section";
-import { ThirdSection } from "@/components/sections/third-section";
+import ThirdSection from "@/components/sections/third-section";
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 			<FirstSection />
 			<SecondSection />
 			<ThirdSection />
+			<FourthSection />
 		</div>
 	);
 }

@@ -1,116 +1,107 @@
-"use client";
+import React from "react";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import { Boxes } from "../ui/background-boxes";
 
-import { Brain, Earth, Flag, Sparkles, Trophy } from "lucide-react";
-import { GlowingEffect } from "@/components/ui/glowing-effect";
-
-export function ThirdSection() {
+const ThirdSection = () => {
 	return (
-		<ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:grid-rows-2 h-full w-full snap-start p-4">
-			<GridItem
-				area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
-				icon={<Trophy className="size-8 text-white/95" />}
-				title="Đảng là nhân tố quyết định thắng lợi của cách mạng"
-				description="Running out of copy so I'll write anything."
-				image="https://images.unsplash.com/photo-1499540633125-484965b60031?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			/>
-
-			<GridItem
-				area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-				icon={<Flag className="size-8 text-white/95" />}
-				title="Đảng đại diện cho trí tuệ, đạo đức và sức mạnh đoàn kết dân tộc"
-				description="Yes, it's true. I'm not even kidding. Ask my mom if you don't believe me."
-				image="https://images.unsplash.com/photo-1722865185434-c4399a94b0e8?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			/>
-
-			<GridItem
-				area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-				icon={<Brain className="size-8 text-white/95" />}
-				title="Đảng gắn liền với mục tiêu, lý tưởng cách mạng"
-				description="It's the best money you'll ever spend"
-				image="https://images.unsplash.com/photo-1529094270367-c8f8a8a6ed21?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			/>
-
-			<GridItem
-				area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
-				icon={<Sparkles className="size-8 text-white/95" />}
-				title="Đảng vừa là người lãnh đạo, vừa là người đầy tớ trung thành của nhân dân"
-				description="I'm not even kidding. Ask my mom if you don't believe me."
-				image="https://images.unsplash.com/photo-1513759565286-20e9c5fad06b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			/>
-
-			<GridItem
-				area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-				icon={<Earth className="size-8 text-white/95" />}
-				title="Đảng là hạt nhân đoàn kết dân tộc và quốc tế"
-				description="I'm writing the code as I record this, no shit."
-				image="https://images.unsplash.com/photo-1533282960533-51328aa49826?q=80&w=2142&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			/>
-		</ul>
-	);
-}
-
-interface GridItemProps {
-	area: string;
-	icon: React.ReactNode;
-	title: string;
-	description: React.ReactNode;
-	image: string;
-	textClassNameTitle?: string;
-	textClassNameDescription?: string;
-}
-
-const GridItem = ({
-	area,
-	icon,
-	title,
-	description,
-	image,
-	textClassNameTitle,
-	textClassNameDescription,
-}: GridItemProps) => {
-	return (
-		<li className={`min-h-[14rem] list-none ${area}`}>
-			<div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
-				<GlowingEffect
-					spread={40}
-					glow={true}
-					disabled={false}
-					proximity={64}
-					inactiveZone={0.01}
+		<div className="h-full w-full relative snap-start overflow-hidden">
+			{/* Background with boxes effect */}
+			<div className="absolute inset-0 w-full h-full bg-slate-900 flex flex-col items-center justify-center overflow-hidden rounded-lg pointer-events-auto">
+				<div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+				{/* https://bna.1cdn.vn/2024/08/15/e.baonghean.vn-wp-content-uploads-2021-09-_tranh-ve-cao-trao-xo-viet-nghe-tinh-cua-tac-gia-nguyen-duc-nung-1.jpg */}
+				<img
+					src="https://bna.1cdn.vn/2024/08/15/e.baonghean.vn-wp-content-uploads-2021-09-_tranh-ve-cao-trao-xo-viet-nghe-tinh-cua-tac-gia-nguyen-duc-nung-1.jpg"
+					alt="Background image"
+					className="w-full h-full object-cover rounded-lg"
 				/>
-				<div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
-					<div className="relative flex flex-1 flex-col justify-between gap-3">
-						<div className="absolute top-0 left-0 right-0 w-full h-full bottom-0 rounded-xl z-10">
-							<img
-								src={image}
-								alt="Highlight image"
-								className="w-full h-full object-cover rounded-xl"
-							/>
-						</div>
+				<div className="absolute inset-0 bg-gradient-to-br from-red-900/40 via-yellow-500/20 to-red-800/40 pointer-events-none" />
+			</div>
 
-						<div className="w-fit rounded-lg border border-white/30 p-2 z-20 mt-2 ml-2">{icon}</div>
+			{/* Main content container */}
+			<div className="relative z-30 h-full w-full flex flex-col items-center justify-center px-8 py-20 pointer-events-none">
+				{/* Section title */}
+				<div className="text-center mb-12">
+					<h2 className="text-5xl md:text-6xl font-bold text-white/95 font-bangers mb-4">
+						Kết Luận
+					</h2>
+					<div className="w-32 h-1 bg-gradient-to-r from-red-500 to-yellow-500 mx-auto rounded-full" />
+				</div>
 
-						<div className="space-y-3 z-20">
-							<h3
-								className={`-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance  md:text-2xl/[1.875rem]  ${
-									textClassNameTitle ? textClassNameTitle : "text-black dark:text-white"
-								}`}
-							>
-								{title}
-							</h3>
-							<p
-								className={`font-sans text-sm/[1.125rem] md:text-base/[1.375rem] [&_b]:md:font-semibold [&_strong]:md:font-semibold ${
-									textClassNameDescription
-										? textClassNameDescription
-										: "text-black dark:text-neutral-400"
-								}`}
-							>
-								{description}
+				{/* Quote card */}
+				<div className="max-w-4xl w-full mb-8">
+					<div className="relative bg-black/70 backdrop-blur-md border border-red-500/30 rounded-2xl p-8 shadow-2xl">
+						<div className="relative">
+							{/* Quote mark */}
+							<div className="absolute -top-4 -left-4 text-6xl text-red-500 font-serif drop-shadow-lg">
+								&ldquo;
+							</div>
+
+							<blockquote className="text-xl md:text-2xl font-bold text-white leading-relaxed text-center italic mb-6 drop-shadow-lg">
+								Đảng ta là đạo đức, là văn minh
+							</blockquote>
+
+							<p className="text-lg text-white/95 leading-relaxed text-center font-medium drop-shadow-md">
+								Người khẳng định, chỉ có{" "}
+								<span className="font-bold text-red-300 bg-red-900/30 px-2 py-1 rounded">
+									Đảng Cộng sản Việt Nam
+								</span>{" "}
+								– đội tiên phong của giai cấp công nhân và dân tộc – mới đủ bản lĩnh và trí tuệ để
+								lãnh đạo cách mạng đi đến thắng lợi cuối cùng.
 							</p>
+
+							{/* Quote mark */}
+							<div className="absolute -bottom-4 -right-4 text-6xl text-red-500 font-serif drop-shadow-lg">
+								&rdquo;
+							</div>
 						</div>
 					</div>
 				</div>
+
+				{/* Conclusion statement */}
+				<div className="max-w-5xl w-full">
+					<HoverBorderGradient
+						containerClassName="rounded-2xl"
+						as="div"
+						className="text-white flex items-center justify-center p-8 shadow-2xl"
+					>
+						<div className="text-center">
+							<h3 className="text-2xl md:text-3xl font-bold text-white mb-6 flex items-center justify-center gap-3 drop-shadow-lg">
+								<span className="text-red-400">★</span>
+								Tuyên Bố Lịch Sử
+								<span className="text-yellow-400">★</span>
+							</h3>
+
+							<p className="text-lg md:text-xl text-white leading-relaxed font-medium drop-shadow-md">
+								<span className="font-bold text-red-300 bg-red-900/40 px-2 py-1 rounded">
+									Sự lãnh đạo của Đảng Cộng sản Việt Nam là một tất yếu
+								</span>
+								, vai trò lãnh đạo của Đảng cũng là một tất yếu - điều đó xuất phát từ
+								<span className="font-bold text-yellow-300 bg-yellow-900/40 px-2 py-1 rounded ml-1">
+									yêu cầu phát triển của dân tộc Việt Nam
+								</span>
+								.
+							</p>
+						</div>
+					</HoverBorderGradient>
+				</div>
+
+				{/* Decorative elements */}
+				<div className="absolute top-20 left-10 w-4 h-4 bg-red-500 rounded-full animate-pulse" />
+				<div className="absolute top-32 right-16 w-3 h-3 bg-yellow-500 rounded-full animate-pulse delay-500" />
+				<div className="absolute bottom-20 left-20 w-5 h-5 bg-red-400 rounded-full animate-pulse delay-1000" />
+				<div className="absolute bottom-32 right-10 w-3 h-3 bg-yellow-400 rounded-full animate-pulse delay-700" />
+
+				{/* Floating stars */}
+				<div className="absolute top-1/4 left-1/4 text-yellow-400 text-2xl animate-bounce">★</div>
+				<div className="absolute top-1/3 right-1/3 text-red-400 text-xl animate-bounce delay-300">
+					★
+				</div>
+				<div className="absolute bottom-1/4 right-1/4 text-yellow-500 text-lg animate-bounce delay-600">
+					★
+				</div>
 			</div>
-		</li>
+		</div>
 	);
 };
+
+export default ThirdSection;

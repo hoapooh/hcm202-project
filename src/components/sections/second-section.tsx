@@ -80,7 +80,13 @@ export function SecondSection() {
 				)}
 			/>
 
-			<Spotlight className="-top-40 left-0 md:-top-20 md:left-60" fill="white" />
+			{/* https://doanthanhnien.vn/Content/uploads/images/133045716834111411_vna_potal_ky_niem_110_nam_ngay_sinh_dong_chi_vo_chi_cong_nguoi_chien_si_cach_mang_tai_tri_kien_cuong_nha_lanh_dao_xuat_sac_cua_dang_va_cach_mang_viet__6264134.jpg */}
+			<img
+				src="https://static01.nyt.com/images/2017/10/20/arts/20VIETNAM-PRINT1/20VIETNAM-PRINT1-superJumbo.jpg"
+				alt="background image"
+				className="absolute inset-0 w-full h-full object-cover"
+			/>
+			<div className="absolute inset-0 w-full h-full bg-black/30" />
 			<StickyScroll content={content} />
 		</div>
 	);
