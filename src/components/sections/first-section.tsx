@@ -32,7 +32,7 @@ const FirstSection = () => {
 	];
 
 	return (
-		<div className="h-full w-full relative snap-start">
+		<div className="h-full w-full relative snap-start" id="main-content">
 			<div className="h-full w-full pt-20 px-10">
 				<h2 className="text-6xl font-bold text-center text-slate-800 dark:text-white/90 font-bangers">
 					Tính tất yếu ra đời của <span className="text-red-500/95">Đảng Cộng sản Việt Nam</span>
