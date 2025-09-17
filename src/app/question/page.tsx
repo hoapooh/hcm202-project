@@ -21,7 +21,7 @@ const QuestionPage = () => {
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
               <div className="text-center">
                 <div className="text-4xl mb-4">📚</div>
-                <h3 className="text-xl font-semibold mb-2">Bài Tập</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Bài Tập</h3>
                 <p className="text-gray-600 mb-4">
                   Các câu hỏi thực hành để củng cố kiến thức
                 </p>
@@ -34,7 +34,7 @@ const QuestionPage = () => {
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
               <div className="text-center">
                 <div className="text-4xl mb-4">📝</div>
-                <h3 className="text-xl font-semibold mb-2">Kiểm Tra</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Kiểm Tra</h3>
                 <p className="text-gray-600 mb-4">
                   Đánh giá mức độ hiểu bài qua bài kiểm tra
                 </p>
@@ -47,7 +47,7 @@ const QuestionPage = () => {
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
               <div className="text-center">
                 <div className="text-4xl mb-4">🔄</div>
-                <h3 className="text-xl font-semibold mb-2">Ôn Tập</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Ôn Tập</h3>
                 <p className="text-gray-600 mb-4">
                   Ôn lại kiến thức đã học một cách hiệu quả
                 </p>
