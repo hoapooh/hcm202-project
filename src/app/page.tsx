@@ -5,15 +5,17 @@ import { FourthSection } from "@/components/sections/fourth-section";
 import HeroSection from "@/components/sections/hero-section";
 import { SecondSection } from "@/components/sections/second-section";
 import ThirdSection from "@/components/sections/third-section";
+import FirstPage from "@/components/sections/first-page";
 
 export default function Home() {
-	return (
-		<div className="w-screen h-screen snap-y snap-mandatory scroll-smooth delay-200 overflow-y-scroll container-scroll">
-			<HeroSection />
-			<FirstSection />
-			<SecondSection />
-			<ThirdSection />
-			<FourthSection />
-		</div>
-	);
+  return (
+    <div className="w-screen h-screen snap-y snap-mandatory scroll-smooth delay-200 overflow-y-scroll container-scroll">
+      <HeroSection />
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
+      <FirstPage />
+      <FourthSection />
+    </div>
+  );
 }
