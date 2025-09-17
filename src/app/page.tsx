@@ -3,7 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import FirstSection from "@/components/sections/first-section";
-import { FourthSection } from "@/components/sections/fourth-section";
+import { FifthSection } from "@/components/sections/fifth-section";
+import  FourthSection  from "@/components/sections/fourth-sections";
 import HeroSection from "@/components/sections/hero-section";
 import { TenSection } from "@/components/sections/ten-section";
 import { SecondSection } from "@/components/sections/second-section";
@@ -72,6 +73,7 @@ export default function Home() {
 				<SecondSection />
 				<ThirdSection />
 				<FourthSection />
+				<FifthSection />
 				<TenSection />
 				<ElevenSection />
 				<TwelveSection />

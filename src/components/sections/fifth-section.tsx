@@ -5,7 +5,7 @@ import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 import React, { useState } from "react";
 
-export function FourthSection() {
+export function FifthSection() {
   const [selectedItem, setSelectedItem] = useState<GridItemProps | null>(null);
 
   const items: GridItemProps[] = [
@@ -113,8 +113,8 @@ export function FourthSection() {
 
       {/* Modal hiển thị Card 3D */}
       {selectedItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
-          <div className="absolute top-4 right-4">
+        <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/70 p-4">
+          <div className="absolute top-5 right-5 z-[99999]">
             <button
               onClick={() => setSelectedItem(null)}
               className="px-4 py-2 bg-red-500 rounded-lg shadow text-sm"

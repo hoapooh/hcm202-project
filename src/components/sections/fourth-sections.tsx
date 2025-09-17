@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "../ui/lamp";
 
-const FirstPage = () => {
+const FourthSection = () => {
   return (
-    <div className="w-full h-full py-4 relative snap-start overflow-hidden">
+    <div className="w-full h-full py-4 relative snap-start overflow-hidden" id="leadership-role">
       <img
         src="https://hvctcand.bocongan.gov.vn/Uploads/2020/2/3/13/anhkyniemdang2019.jpg"
         alt="background image"
@@ -29,4 +29,4 @@ const FirstPage = () => {
   );
 };
 
-export default FirstPage;
+export default FourthSection;
