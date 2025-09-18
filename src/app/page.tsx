@@ -16,10 +16,11 @@ import { FifteenSection } from "@/components/sections/fifteen-section";
 import { SixteenSection } from "@/components/sections/sixteen-section";
 import ThirdSection from "@/components/sections/third-section";
 import HeaderNav from "@/components/navigation/header-nav";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
 	const [showScrollTop, setShowScrollTop] = useState(false);
-
+		const router = useRouter();
 	// Theo dõi vị trí cuộn để hiển thị scroll-top button
 	useEffect(() => {
 		const scrollContainer = document.querySelector('.container-scroll');
@@ -56,7 +57,7 @@ export default function Home() {
 	};
 
 	const openChatbot = () => {
-		window.open('/chatbot', '_blank');
+		router.push('/chatbot');
 	};
 
 	return (
