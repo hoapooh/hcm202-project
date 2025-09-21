@@ -1,0 +1,612 @@
+[
+  {
+    "id": 1,
+    "question": "Cơ sở lý luận trực tiếp, quyết định sự hình thành tư tưởng Hồ Chí Minh là:",
+    "options": [
+      "Chủ nghĩa Tam dân của Tôn Trung Sơn",
+      "Chủ nghĩa Mác – Lênin",
+      "Tư tưởng dân chủ tư sản phương Tây",
+      "Truyền thống yêu nước Việt Nam"
+    ],
+    "answer": "Chủ nghĩa Mác – Lênin",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 2,
+    "question": "Hồ Chí Minh tiếp nhận Luận cương của Lênin về vấn đề dân tộc và thuộc địa vào năm nào?",
+    "options": ["1917", "1919", "1920", "1925"],
+    "answer": "1920",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 3,
+    "question": "“Tôi xúc động đến phát khóc…” – Hồ Chí Minh nói khi lần đầu đọc văn kiện nào?",
+    "options": [
+      "Tuyên ngôn Đảng Cộng sản",
+      "Luận cương Lênin về vấn đề dân tộc và thuộc địa",
+      "Cương lĩnh chính trị 1930",
+      "Đường Kách mệnh"
+    ],
+    "answer": "Luận cương Lênin về vấn đề dân tộc và thuộc địa",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 4,
+    "question": "Cơ sở thực tiễn chủ yếu hình thành tư tưởng HCM là:",
+    "options": [
+      "Phong trào công nhân quốc tế",
+      "Phong trào yêu nước và phong trào công nhân Việt Nam",
+      "Cách mạng Tháng Mười Nga",
+      "Sự suy yếu của chủ nghĩa tư bản"
+    ],
+    "answer": "Phong trào yêu nước và phong trào công nhân Việt Nam",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 5,
+    "question": "Điểm nổi bật trong phẩm chất cá nhân Hồ Chí Minh:",
+    "options": [
+      "Quyết tâm đi tìm đường cứu nước",
+      "Giỏi ngoại ngữ",
+      "Giỏi tổ chức phong trào",
+      "Tài văn chương"
+    ],
+    "answer": "Quyết tâm đi tìm đường cứu nước",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 6,
+    "question": "Yếu tố quyết định để Hồ Chí Minh khẳng định con đường giải phóng dân tộc Việt Nam:",
+    "options": [
+      "Tư tưởng dân chủ tư sản",
+      "Chủ nghĩa Mác – Lênin",
+      "Khẩu hiệu “Tự do – Bình đẳng – Bác ái”",
+      "Phong trào Đông Du"
+    ],
+    "answer": "Chủ nghĩa Mác – Lênin",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 7,
+    "question": "Trước khi ra đi tìm đường cứu nước (1911), Hồ Chí Minh đã sớm hình thành:",
+    "options": [
+      "Ý thức giai cấp",
+      "Tư tưởng yêu nước",
+      "Lập trường cộng sản",
+      "Tư tưởng xã hội chủ nghĩa"
+    ],
+    "answer": "Tư tưởng yêu nước",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 8,
+    "question": "Phong trào nào cuối thế kỷ XIX – đầu XX đã thôi thúc Hồ Chí Minh tìm con đường mới?",
+    "options": [
+      "Cần Vương",
+      "Đông Du",
+      "Đông Kinh Nghĩa Thục",
+      "Tất cả các phong trào trên"
+    ],
+    "answer": "Tất cả các phong trào trên",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 9,
+    "question": "Hồ Chí Minh tiếp thu yếu tố nào từ văn hóa truyền thống Việt Nam?",
+    "options": [
+      "Lòng yêu nước, nhân ái, đoàn kết",
+      "Cá nhân chủ nghĩa",
+      "Chủ nghĩa thực dụng",
+      "Tư tưởng phong kiến bảo thủ"
+    ],
+    "answer": "Lòng yêu nước, nhân ái, đoàn kết",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 10,
+    "question": "Tư tưởng Hồ Chí Minh trở thành hệ thống hoàn chỉnh khi nào?",
+    "options": [
+      "Trước 1911",
+      "1920 – 1930",
+      "Sau Cách mạng Tháng Tám 1945",
+      "Trong kháng chiến chống Pháp và sau 1954"
+    ],
+    "answer": "Trong kháng chiến chống Pháp và sau 1954",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 11,
+    "question": "Tư tưởng xuyên suốt của HCM:",
+    "options": [
+      "Giải phóng dân tộc gắn với giải phóng giai cấp",
+      "Độc lập dân tộc gắn liền dân chủ tư sản",
+      "Kết hợp Nho – Phật – Lão",
+      "Hòa nhập với tư bản"
+    ],
+    "answer": "Giải phóng dân tộc gắn với giải phóng giai cấp",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 12,
+    "question": "“Không có gì quý hơn độc lập, tự do” được HCM khẳng định vào thời điểm:",
+    "options": ["1941", "1945", "1966", "1969"],
+    "answer": "1966",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 13,
+    "question": "Hồ Chí Minh cho rằng độc lập dân tộc phải gắn liền với:",
+    "options": [
+      "Hòa bình và dân chủ",
+      "Chủ nghĩa xã hội",
+      "Tư tưởng Khổng Mạnh",
+      "Chủ nghĩa Tam dân"
+    ],
+    "answer": "Chủ nghĩa xã hội",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 14,
+    "question": "Mục tiêu cuối cùng của cách mạng Việt Nam theo HCM là:",
+    "options": [
+      "Giành độc lập dân tộc",
+      "Xây dựng nhà nước tư sản",
+      "CNXH và CNCS",
+      "Giải phóng giai cấp nông dân"
+    ],
+    "answer": "CNXH và CNCS",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 15,
+    "question": "Hồ Chí Minh khẳng định dân tộc Việt Nam chỉ có thể được giải phóng hoàn toàn nếu:",
+    "options": [
+      "Tư sản lãnh đạo",
+      "Công – nông đoàn kết và đi theo cách mạng vô sản",
+      "Gắn bó với phương Tây",
+      "Nho giáo phục hưng"
+    ],
+    "answer": "Công – nông đoàn kết và đi theo cách mạng vô sản",
+    "type": "quiz",
+    "no": "1"
+  },
+  {
+    "id": 16,
+    "question": "Điểm sáng tạo của HCM so với nhiều lãnh tụ yêu nước đương thời là:",
+    "options": [
+      "Đi theo cách mạng tư sản",
+      "Kết hợp phong trào công nhân với phong trào yêu nước",
+      "Tách biệt phong trào công nhân",
+      "Tách biệt phong trào nông dân"
+    ],
+    "answer": "Kết hợp phong trào công nhân với phong trào yêu nước",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 17,
+    "question": "Hồ Chí Minh khẳng định: “Cách mạng giải phóng dân tộc muốn thắng lợi phải…”",
+    "options": [
+      "Đi theo con đường cách mạng vô sản",
+      "Đi theo con đường dân chủ tư sản",
+      "Dựa vào phong trào nông dân",
+      "Dựa vào tầng lớp trí thức"
+    ],
+    "answer": "Đi theo con đường cách mạng vô sản",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 18,
+    "question": "Năm nào Hồ Chí Minh xuất bản tác phẩm “Đường Kách mệnh”?",
+    "options": ["1917", "1925", "1927", "1930"],
+    "answer": "1927",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 19,
+    "question": "Cách mạng Tháng Mười Nga có ý nghĩa gì với HCM?",
+    "options": [
+      "Chứng minh con đường vô sản đúng đắn",
+      "Chứng minh con đường dân chủ tư sản",
+      "Chứng minh Nho giáo còn giá trị",
+      "Củng cố phong trào Đông Du"
+    ],
+    "answer": "Chứng minh con đường vô sản đúng đắn",
+    "type": "quiz",
+    "no": "2"
+  },
+  {
+    "id": 20,
+    "question": "Theo HCM, độc lập dân tộc phải gắn với hạnh phúc của:",
+    "options": [
+      "Giai cấp công nhân",
+      "Địa chủ",
+      "Nhân dân lao động",
+      "Trí thức"
+    ],
+    "answer": "Nhân dân lao động",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 21,
+    "question": "Điều kiện tất yếu dẫn đến sự ra đời của Đảng Cộng sản Việt Nam là sự kết hợp:",
+    "options": [
+      "Phong trào công nhân, phong trào nông dân, phong trào trí thức",
+      "Chủ nghĩa Mác – Lênin, phong trào công nhân và phong trào yêu nước",
+      "Phong trào yêu nước, nho sĩ và trí thức",
+      "Chủ nghĩa Tam dân và phong trào nông dân"
+    ],
+    "answer": "Chủ nghĩa Mác – Lênin, phong trào công nhân và phong trào yêu nước",
+    "type": "quiz",
+    "no": "3"
+  },
+  {
+    "id": 22,
+    "question": "Hồ Chí Minh viết: “Đảng có vững, cách mệnh mới thành công…” trong tác phẩm nào?",
+    "options": [
+      "Đường Kách mệnh",
+      "Bản án chế độ thực dân Pháp",
+      "Tuyên ngôn Độc lập",
+      "Lời kêu gọi toàn quốc kháng chiến"
+    ],
+    "answer": "Đường Kách mệnh",
+    "type": "quiz",
+    "no": "4"
+  },
+  {
+    "id": 23,
+    "question": "Theo HCM, Đảng phải thường xuyên:",
+    "options": [
+      "Củng cố chính quyền",
+      "Tự phê bình và phê bình",
+      "Đổi mới cơ cấu tổ chức",
+      "Tăng số lượng đảng viên"
+    ],
+    "answer": "Tự phê bình và phê bình",
+    "type": "quiz",
+    "no": "5"
+  },
+  {
+    "id": 24,
+    "question": "Đạo đức cách mạng mà HCM coi trọng nhất:",
+    "options": [
+      "Trung với nước, hiếu với dân",
+      "Trung quân, ái quốc",
+      "Nghĩa khí giang hồ",
+      "Cần cù, chịu khó"
+    ],
+    "answer": "Trung với nước, hiếu với dân",
+    "type": "quiz",
+    "no": "6"
+  },
+  {
+    "id": 25,
+    "question": "“Đảng ta là đạo đức, là văn minh” do ai khẳng định?",
+    "options": ["V.I. Lênin", "Hồ Chí Minh", "Phạm Văn Đồng", "Trường Chinh"],
+    "answer": "Hồ Chí Minh",
+    "type": "quiz",
+    "no": "7"
+  },
+  {
+    "id": 26,
+    "question": "Một trong những nguyên tắc tổ chức của Đảng theo HCM:",
+    "options": [
+      "Tập trung dân chủ",
+      "Dân chủ trực tiếp",
+      "Phân quyền độc lập",
+      "Tự trị từng địa phương"
+    ],
+    "answer": "Tập trung dân chủ",
+    "type": "quiz",
+    "no": "8"
+  },
+  {
+    "id": 27,
+    "question": "Hồ Chí Minh coi cán bộ là:",
+    "options": [
+      "Người đại diện cho lợi ích cá nhân",
+      "Cái gốc của mọi công việc",
+      "Người giữ vai trò thứ yếu",
+      "Cầu nối mang tính hình thức"
+    ],
+    "answer": "Cái gốc của mọi công việc",
+    "type": "quiz",
+    "no": "9"
+  },
+  {
+    "id": 28,
+    "question": "Theo HCM, để giữ vững sự trong sạch, Đảng cần chống:",
+    "options": [
+      "Tham ô, lãng phí, quan liêu",
+      "Tham ô",
+      "Hòa bình giả hiệu",
+      "Tự lực cánh sinh"
+    ],
+    "answer": "Tham ô, lãng phí, quan liêu",
+    "type": "quiz",
+    "no": "10"
+  },
+  {
+    "id": 29,
+    "question": "“Đảng vừa là người lãnh đạo, vừa là người đầy tớ trung thành của nhân dân” thể hiện:",
+    "options": [
+      "Đảng chỉ huy tuyệt đối",
+      "Quan điểm quyền lực – phục vụ",
+      "Đảng chỉ phục vụ công nhân",
+      "Đảng đứng ngoài nhân dân"
+    ],
+    "answer": "Quan điểm quyền lực – phục vụ",
+    "type": "quiz",
+    "no": "11"
+  },
+  {
+    "id": 30,
+    "question": "Khi Đảng suy thoái, xa dân thì sẽ:",
+    "options": [
+      "Được nhân dân bảo vệ",
+      "Mất vai trò lãnh đạo",
+      "Được tăng cường sức mạnh",
+      "Trở nên độc lập hơn"
+    ],
+    "answer": "Mất vai trò lãnh đạo",
+    "type": "quiz",
+    "no": "12"
+  },
+  {
+    "id": 31,
+    "question": "Hồ Chí Minh coi đại đoàn kết dân tộc là:",
+    "options": [
+      "Sách lược tạm thời",
+      "Chiến lược cách mạng lâu dài",
+      "Biện pháp trong kháng chiến",
+      "Thủ đoạn ngoại giao"
+    ],
+    "answer": "Chiến lược cách mạng lâu dài",
+    "type": "quiz",
+    "no": "13"
+  },
+  {
+    "id": 32,
+    "question": "Khẩu hiệu nổi tiếng về đoàn kết của Hồ Chí Minh:",
+    "options": [
+      "“Đoàn kết dân tộc là then chốt”",
+      "“Đoàn kết, đoàn kết, đại đoàn kết – Thành công, thành công, đại thành công”",
+      "“Đoàn kết là sức mạnh”",
+      "“Đoàn kết tạo nên thắng lợi”"
+    ],
+    "answer": "“Đoàn kết, đoàn kết, đại đoàn kết – Thành công, thành công, đại thành công”",
+    "type": "quiz",
+    "no": "14"
+  },
+  {
+    "id": 33,
+    "question": "Để đoàn kết toàn dân, HCM chủ trương:",
+    "options": [
+      "Đảng liên minh với địa chủ",
+      "Xây dựng Mặt trận dân tộc thống nhất",
+      "Hạn chế trí thức tham gia chính trị",
+      "Tách biệt công nhân và nông dân"
+    ],
+    "answer": "Xây dựng Mặt trận dân tộc thống nhất",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 34,
+    "question": "Trong thời kỳ chống Pháp, tổ chức nào tiêu biểu cho khối đoàn kết dân tộc?",
+    "options": ["Việt Nam Quốc dân đảng", "Việt Minh", "Đông Du", "Cần Vương"],
+    "answer": "Việt Minh",
+    "type": "quiz",
+    "no": "15"
+  },
+  {
+    "id": 35,
+    "question": "Theo HCM, yếu tố quyết định để đoàn kết là:",
+    "options": [
+      "Giai cấp",
+      "Lợi ích dân tộc",
+      "Tôn giáo",
+      "Chính trị đảng phái"
+    ],
+    "answer": "Lợi ích dân tộc",
+    "type": "quiz",
+    "no": "16"
+  },
+  {
+    "id": 36,
+    "question": "Đoàn kết quốc tế trong tư tưởng HCM dựa trên nguyên tắc:",
+    "options": [
+      "Chủ nghĩa dân tộc cực đoan",
+      "Chủ nghĩa quốc tế vô sản",
+      "Chủ nghĩa dân tộc hẹp hòi",
+      "Liên minh phong kiến"
+    ],
+    "answer": "Chủ nghĩa quốc tế vô sản",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 37,
+    "question": "HCM nhấn mạnh: kết hợp sức mạnh dân tộc với:",
+    "options": [
+      "Sức mạnh thời đại",
+      "Chủ nghĩa dân tộc",
+      "Chủ nghĩa phong kiến",
+      "Lực lượng quân sự"
+    ],
+    "answer": "Sức mạnh thời đại",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 38,
+    "question": "HCM cho rằng đoàn kết dân tộc phải:",
+    "options": [
+      "Bao trùm mọi giai cấp, tầng lớp",
+      "Chỉ công – nông",
+      "Chỉ công nhân",
+      "Chỉ nông dân"
+    ],
+    "answer": "Bao trùm mọi giai cấp, tầng lớp",
+    "type": "quiz",
+    "no": "17"
+  },
+  {
+    "id": 39,
+    "question": "Nguyên tắc đoàn kết trong mặt trận dân tộc thống nhất là:",
+    "options": [
+      "Tự nguyện, bình đẳng, cùng có lợi",
+      "Cưỡng chế",
+      "Bắt buộc",
+      "Giới hạn quyền lực"
+    ],
+    "answer": "Tự nguyện, bình đẳng, cùng có lợi",
+    "type": "quiz",
+    "no": "18"
+  },
+  {
+    "id": 40,
+    "question": "Vai trò hạt nhân đoàn kết dân tộc theo HCM là:",
+    "options": [
+      "Đảng Cộng sản Việt Nam",
+      "Giai cấp công nhân",
+      "Nông dân",
+      "Trí thức"
+    ],
+    "answer": "Đảng Cộng sản Việt Nam",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 41,
+    "question": "HCM coi văn hóa là:",
+    "options": [
+      "Mục tiêu, động lực của cách mạng",
+      "Một lĩnh vực độc lập",
+      "Vấn đề thứ yếu",
+      "Giá trị phương Tây"
+    ],
+    "answer": "Mục tiêu, động lực của cách mạng",
+    "type": "quiz",
+    "no": "19"
+  },
+  {
+    "id": 42,
+    "question": "Nội dung cốt lõi của đạo đức cách mạng theo HCM:",
+    "options": [
+      "Trung với nước, hiếu với dân",
+      "Trung quân, ái quốc",
+      "Nho giáo",
+      "Chủ nghĩa dân tộc cực đoan"
+    ],
+    "answer": "Trung với nước, hiếu với dân",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 43,
+    "question": "Hồ Chí Minh coi đạo đức của người cách mạng như:",
+    "options": ["Gốc của cây", "Ngọn cây", "Cành cây", "Hoa quả"],
+    "answer": "Gốc của cây",
+    "type": "quiz",
+    "no": "20"
+  },
+  {
+    "id": 44,
+    "question": "Bộ chuẩn mực đạo đức HCM nêu gồm:",
+    "options": [
+      "Cần, kiệm, liêm, chính, chí công vô tư",
+      "Hiếu, lễ, trung, tín",
+      "Nhân, lễ, nghĩa, trí, tín",
+      "Dũng, nghĩa, tín, liêm"
+    ],
+    "answer": "Cần, kiệm, liêm, chính, chí công vô tư",
+    "type": "quiz",
+    "no": "21"
+  },
+  {
+    "id": 45,
+    "question": "Hồ Chí Minh nhấn mạnh: “Nói đi đôi với…”",
+    "options": ["Làm", "Nghĩ", "Viết", "Học"],
+    "answer": "Làm",
+    "type": "quiz",
+    "no": "22"
+  },
+  {
+    "id": 46,
+    "question": "Trong xây dựng con người mới, HCM coi trọng yếu tố:",
+    "options": [
+      "Tài chính là quan trọng nhất",
+      "Đức và tài kết hợp",
+      "Dân là gốc",
+      "Tài hơn đức"
+    ],
+    "answer": "Dân là gốc",
+    "type": "quiz",
+    "no": "23"
+  },
+  {
+    "id": 47,
+    "question": "“Trong bầu trời không gì quý bằng nhân dân” thể hiện tư tưởng:",
+    "options": [
+      "Dân là phương tiện",
+      "Dân là thứ yếu",
+      "Dân là công cụ",
+      "Dân là gốc"
+    ],
+    "answer": "Dân là gốc",
+    "type": "",
+    "no": ""
+  },
+  {
+    "id": 48,
+    "question": "Giá trị đạo đức lớn nhất trong phòng chống suy thoái theo HCM:",
+    "options": ["Trung quân", "Chí công vô tư", "Trách nhiệm", "Dũng cảm"],
+    "answer": "Chí công vô tư",
+    "type": "quiz",
+    "no": "24"
+  },
+  {
+    "id": 49,
+    "question": "Trong phát triển văn hóa, HCM chủ trương:",
+    "options": [
+      "Khép kín dân tộc",
+      "Chỉ giữ truyền thống",
+      "Tiếp thu tinh hoa nhân loại",
+      "Chỉ học phương Tây"
+    ],
+    "answer": "Tiếp thu tinh hoa nhân loại",
+    "type": "quiz",
+    "no": "25"
+  },
+  {
+    "id": 50,
+    "question": "Mục tiêu cuối cùng của tư tưởng HCM về con người:",
+    "options": [
+      "Phát triển toàn diện, tự do, hạnh phúc",
+      "Giàu có vật chất",
+      "Giỏi chuyên môn",
+      "Địa vị xã hội"
+    ],
+    "answer": "Phát triển toàn diện, tự do, hạnh phúc",
+    "type": "",
+    "no": ""
+  }
+]

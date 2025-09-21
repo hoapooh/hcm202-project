@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "../ui/lamp";
+import { Mouse, ChevronsDown } from "lucide-react";
 
 const FourthSection = () => {
   return (
@@ -25,6 +26,8 @@ const FourthSection = () => {
           <span className="text-red-600">Đảng Cộng sản Việt Nam</span>
         </motion.h1>
       </LampContainer>
+      <Mouse className="absolute bottom-16 size-12 animate-bounce text-white left-1/2 transform -translate-x-1/2" />
+			<ChevronsDown className="absolute bottom-4 size-12 animate-bounce text-white left-1/2 transform -translate-x-1/2" />
     </div>
   );
 };
