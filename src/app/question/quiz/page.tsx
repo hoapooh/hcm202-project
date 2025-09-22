@@ -135,7 +135,7 @@ const QuizPage: React.FC = () => {
             {quizQuestions.map((q, idx) => (
               <li key={q.id}>
                 <button
-                  className={`w-full px-4 py-2 rounded flex justify-center
+                  className={`w-full px-4 py-2 rounded flex justify-center cursor-pointer
   ${
     idx === currentIdx
       ? "bg-blue-500 text-white font-bold"
@@ -164,7 +164,7 @@ const QuizPage: React.FC = () => {
           )}
           <div className="w-full justify-between mt-6 grid grid-cols-3 gap-4">
             <button
-              className="px-4 py-2 bg-blue-500 rounded hover:bg-blue-600 font-bold disabled:hover:bg-blue-500 disabled:opacity-50"
+              className="px-4 py-2 bg-blue-500 rounded hover:bg-blue-600 font-bold disabled:hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
               onClick={handlePrev}
               disabled={currentIdx === 0}
             >
@@ -198,7 +198,7 @@ const QuizPage: React.FC = () => {
               </button>
             )}
             <button
-              className="px-4 py-2 bg-blue-500 rounded hover:bg-blue-600 font-bold disabled:hover:bg-blue-500 disabled:opacity-50 cusrsor-pointer"
+              className="px-4 py-2 bg-blue-500 rounded hover:bg-blue-600 font-bold disabled:hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
               onClick={handleNext}
               disabled={currentIdx === quizQuestions.length - 1}
             >

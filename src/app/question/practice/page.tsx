@@ -70,7 +70,7 @@ const PracticePage: React.FC = () => {
               ))}
             </div>
             <button
-              className="mt-4 px-4 py-2 bg-gradient-to-br from-pink-700 to-purple-600 text-white rounded cursor-pointer disabled:opacity-50 hover:from-pink-800 hover:to-purple-700 transition-colors"
+              className="mt-4 px-4 py-2 bg-gradient-to-br from-purple-600 to-pink-700 text-white rounded cursor-pointer disabled:opacity-50 hover:from-pink-800 hover:to-purple-700 transition-colors"
               onClick={() => handleSubmit(q.id)}
               disabled={submitted[q.id] || !selectedAnswers[q.id]}
             >
