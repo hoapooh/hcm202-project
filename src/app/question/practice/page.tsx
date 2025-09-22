@@ -74,7 +74,7 @@ const PracticePage: React.FC = () => {
               onClick={() => handleSubmit(q.id)}
               disabled={submitted[q.id] || !selectedAnswers[q.id]}
             >
-              Nộp câu trả lời
+              Đáp án
             </button>
             {submitted[q.id] && (
               <div className="mt-3 font-semibold">
