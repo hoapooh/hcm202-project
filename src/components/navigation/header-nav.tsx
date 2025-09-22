@@ -57,7 +57,12 @@ const HeaderNav = () => {
     {
       label: "Đảng phải trong sạch lành mạnh",
       ariaLabel: "Đi đến phần Đảng phải trong sạch lành mạnh",
-      link: "#hcm-thoughts",
+      link: "#party-purity-intro",
+    },
+    {
+      label: "Kết Luận",
+      ariaLabel: "Đi đến phần Kết Luận",
+      link: "#conclusion",
     },
     {
       label: "Câu Hỏi",

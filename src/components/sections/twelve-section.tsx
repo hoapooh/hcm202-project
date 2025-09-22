@@ -20,7 +20,7 @@ export const TwelveSection = () => {
       
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen p-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto pb-20">
           
           {/* Section Title */}
           <motion.div
@@ -36,9 +36,6 @@ export const TwelveSection = () => {
             <h3 className="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4">
               Phẩm chất chính trị và đạo đức cách mạng
             </h3>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-              Hồ Chí Minh đòi hỏi cán bộ, đảng viên phải "vừa hồng, vừa chuyên"
-            </p>
           </motion.div>
 
           {/* Main Content Grid */}

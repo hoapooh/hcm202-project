@@ -72,15 +72,9 @@ export const TenSection = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Đảng phải trong sạch lành mạnh
-          </h1>
-          <h2 className="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-yellow-400 to-red-400 bg-clip-text text-transparent h-20">
             Xây dựng đội ngũ cán bộ, công nhân viên
-          </h2>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-            Tư tưởng Hồ Chí Minh về xây dựng đội ngũ cán bộ trong sạch, vững mạnh
-          </p>
+          </h1>
         </motion.div>
 
         {/* Cards Grid */}
@@ -88,12 +82,12 @@ export const TenSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto"
         >
           {sections.map((section, index) => (
             <div
               key={index}
-              className="group/canvas-card relative h-[25rem] bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden cursor-pointer hover:shadow-2xl transition-all duration-300"
+              className="group/canvas-card relative h-[18rem] bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden cursor-pointer hover:shadow-2xl transition-all duration-300"
             >
               <CanvasRevealEffect
                 animationSpeed={5.1}
@@ -107,15 +101,15 @@ export const TenSection = () => {
               <div className="absolute inset-0 [background:radial-gradient(400px_at_center,rgba(255,255,255,.1),transparent)] opacity-0 group-hover/canvas-card:opacity-100 transition duration-200" />
               
               {/* Card Content */}
-              <div className="relative z-20 p-6 text-center h-full flex flex-col justify-center">
-                <div className="text-4xl mb-4">{section.icon}</div>
-                <h3 className="text-lg font-bold text-white mb-2">
+              <div className="relative z-20 p-4 text-center h-full flex flex-col justify-center">
+                <div className="text-3xl mb-3">{section.icon}</div>
+                <h3 className="text-base font-bold text-white mb-2">
                   {section.title}
                 </h3>
-                <h4 className="text-md font-semibold text-yellow-400 mb-3">
+                <h4 className="text-sm font-semibold text-yellow-400 mb-2">
                   {section.subtitle}
                 </h4>
-                <p className="text-sm text-gray-300 leading-relaxed">
+                <p className="text-xs text-gray-300 leading-relaxed">
                   {section.description}
                 </p>
               </div>
