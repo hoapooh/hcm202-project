@@ -82,7 +82,7 @@ export function SecondSection() {
 
 			{/* https://doanthanhnien.vn/Content/uploads/images/133045716834111411_vna_potal_ky_niem_110_nam_ngay_sinh_dong_chi_vo_chi_cong_nguoi_chien_si_cach_mang_tai_tri_kien_cuong_nha_lanh_dao_xuat_sac_cua_dang_va_cach_mang_viet__6264134.jpg */}
 			<img
-				src="https://static01.nyt.com/images/2017/10/20/arts/20VIETNAM-PRINT1/20VIETNAM-PRINT1-superJumbo.jpg"
+				src="https://nhandan.vn/special/nguyenaiquoc_thanhlapdang/assets/h2Sk4FEocM/nguyenaiquocoquangchau-2560x1544.jpg"
 				alt="background image"
 				className="absolute inset-0 w-full h-full object-cover"
 			/>
