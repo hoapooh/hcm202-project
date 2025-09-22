@@ -149,3 +149,7 @@
 	/* height: 800px !important; */
 	max-height: 650px !important;
 }
+
+.bpFabWrapper {
+	z-index: 10 !important;
+}

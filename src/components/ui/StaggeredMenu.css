@@ -8,6 +8,25 @@
 	pointer-events: none;
 }
 
+.sm-backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	opacity: 0;
+	pointer-events: none;
+	z-index: 1;
+	transition: opacity 0.3s ease;
+}
+
+.staggered-menu-wrapper[data-open] .sm-backdrop {
+	pointer-events: auto;
+}
+
 .staggered-menu-header {
 	position: absolute;
 	top: 0;

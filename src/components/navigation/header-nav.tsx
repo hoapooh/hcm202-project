@@ -41,7 +41,7 @@ const HeaderNav = () => {
 			ariaLabel: "Đi đến trang chủ",
 			link: "/",
 		},
-		{
+		/* {
 			label: "Tính tất yếu ra đời của Đảng Cộng sản Việt Nam",
 			ariaLabel: "Đi đến phần Tính tất yếu ra đời của Đảng Cộng sản Việt Nam",
 			link: "#main-content",
@@ -55,7 +55,7 @@ const HeaderNav = () => {
 			label: "Đảng phải trong sạch lành mạnh",
 			ariaLabel: "Đi đến phần Đảng phải trong sạch lành mạnh",
 			link: "#hcm-thoughts",
-		},
+		}, */
 		{
 			label: "Câu Hỏi",
 			ariaLabel: "Đi đến trang câu hỏi",

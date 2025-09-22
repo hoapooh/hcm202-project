@@ -66,6 +66,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 	const toggleBtnRef = useRef<HTMLButtonElement | null>(null);
 	const busyRef = useRef(false);
 	const itemEntranceTweenRef = useRef<gsap.core.Tween | null>(null);
+	const backdropRef = useRef<HTMLDivElement | null>(null);
 
 	useLayoutEffect(() => {
 		const ctx = gsap.context(() => {
@@ -75,7 +76,8 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 			const plusV = plusVRef.current;
 			const icon = iconRef.current;
 			const textInner = textInnerRef.current;
-			if (!panel || !plusH || !plusV || !icon || !textInner) return;
+			const backdrop = backdropRef.current;
+			if (!panel || !plusH || !plusV || !icon || !textInner || !backdrop) return;
 
 			let preLayers: HTMLElement[] = [];
 			if (preContainer) {
@@ -85,6 +87,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
 			const offscreen = position === "left" ? -100 : 100;
 			gsap.set([panel, ...preLayers], { xPercent: offscreen });
+			gsap.set(backdrop, { opacity: 0, pointerEvents: "none" });
 			gsap.set(plusH, { transformOrigin: "50% 50%", rotate: 0 });
 			gsap.set(plusV, { transformOrigin: "50% 50%", rotate: 90 });
 			gsap.set(icon, { rotate: 0, transformOrigin: "50% 50%" });
@@ -97,7 +100,8 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 	const buildOpenTimeline = useCallback(() => {
 		const panel = panelRef.current;
 		const layers = preLayerElsRef.current;
-		if (!panel) return null;
+		const backdrop = backdropRef.current;
+		if (!panel || !backdrop) return null;
 
 		openTlRef.current?.kill();
 		if (closeTweenRef.current) {
@@ -133,6 +137,20 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 		}
 
 		const tl = gsap.timeline({ paused: true });
+
+		// Fade in backdrop
+		tl.to(
+			backdrop,
+			{
+				opacity: 1,
+				duration: 0.3,
+				ease: "power2.out",
+				onStart: () => {
+					gsap.set(backdrop, { pointerEvents: "auto" });
+				},
+			},
+			0
+		);
 
 		layerStates.forEach((ls, i) => {
 			tl.fromTo(
@@ -236,11 +254,23 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
 		const panel = panelRef.current;
 		const layers = preLayerElsRef.current;
-		if (!panel) return;
+		const backdrop = backdropRef.current;
+		if (!panel || !backdrop) return;
 
 		const all: HTMLElement[] = [...layers, panel];
 		closeTweenRef.current?.kill();
 		const offscreen = position === "left" ? -100 : 100;
+
+		// Fade out backdrop
+		gsap.to(backdrop, {
+			opacity: 0,
+			duration: 0.25,
+			ease: "power2.out",
+			onComplete: () => {
+				gsap.set(backdrop, { pointerEvents: "none" });
+			},
+		});
+
 		closeTweenRef.current = gsap.to(all, {
 			xPercent: offscreen,
 			duration: 0.32,
@@ -369,6 +399,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 			data-position={position}
 			data-open={open || undefined}
 		>
+			<div ref={backdropRef} className="sm-backdrop" aria-hidden="true" />
 			<div ref={preLayersRef} className="sm-prelayers" aria-hidden="true">
 				{(() => {
 					const raw = colors && colors.length ? colors.slice(0, 4) : ["#1e1e22", "#35353c"];
