@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bangers, Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
+import ActionButton from "@/components/action-button";
 
 const bangers = Bangers({
 	subsets: ["latin"],
@@ -31,6 +32,13 @@ export default function RootLayout({
 				className={`${bangers.variable} ${beVietnamPro.variable} antialiased font-bevietnampro`}
 			>
 				{children}
+				<ActionButton />
+				{/* eslint-disable-next-line @next/next/no-sync-scripts */}
+				<script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+				<script
+					src="https://files.bpcontent.cloud/2025/09/15/03/20250915030247-R30TMPXR.js"
+					defer
+				></script>
 			</body>
 		</html>
 	);
