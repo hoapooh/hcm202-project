@@ -1,6 +1,6 @@
 "use client";
 import HeaderNav from "@/components/navigation/header-nav";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import questionsData from "../questions.json";
 
@@ -13,73 +13,27 @@ interface Question {
   no: string;
 }
 
-const quizQuestions: Question[] = questionsData.filter(
+const exerciseQuestions: Question[] = questionsData.filter(
   (q: Question) => q.type === "quiz"
 );
 
-const QUIZ_DURATION = 20 * 60; 
-
-const QuizPage: React.FC = () => {
+const ExercisePage: React.FC = () => {
   const router = useRouter();
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<{
     [key: number]: string;
   }>({});
-  const [submitted, setSubmitted] = useState(false);
-  const [score, setScore] = useState<number | null>(null);
-  const [showUnanswered, setShowUnanswered] = useState<{
-    [key: number]: boolean;
-  }>({});
-  const [secondsLeft, setSecondsLeft] = useState(QUIZ_DURATION);
-
-  // Đếm ngược thời gian
-  useEffect(() => {
-    if (submitted) return;
-    if (secondsLeft <= 0) {
-      autoSubmit();
-      return;
-    }
-    const timer = setInterval(() => {
-      setSecondsLeft((prev) => prev - 1);
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [secondsLeft, submitted]);
-
-  const autoSubmit = () => {
-    let correct = 0;
-    quizQuestions.forEach((q) => {
-      if (selectedAnswers[q.id] === q.answer) {
-        correct += 1;
-      }
-    });
-    setScore(correct * 0.4);
-    setSubmitted(true);
-    setShowUnanswered({});
-  };
+  const [showResult, setShowResult] = useState<{ [key: number]: boolean }>({});
 
   const handleSelect = (questionId: number, option: string) => {
     setSelectedAnswers((prev) => ({
       ...prev,
       [questionId]: option,
     }));
-  };
-
-  const handleSubmitAll = () => {
-    let correct = 0;
-    let unanswered: { [key: number]: boolean } = {};
-    quizQuestions.forEach((q) => {
-      if (selectedAnswers[q.id] === q.answer) {
-        correct += 1;
-      }
-      if (!selectedAnswers[q.id]) {
-        unanswered[q.id] = true;
-      }
-    });
-    setShowUnanswered(unanswered);
-    if (Object.keys(unanswered).length === 0) {
-      setScore(correct * 0.4);
-      setSubmitted(true);
-    }
+    setShowResult((prev) => ({
+      ...prev,
+      [questionId]: true,
+    }));
   };
 
   const handleQuestionClick = (idx: number) => {
@@ -91,26 +45,24 @@ const QuizPage: React.FC = () => {
   };
 
   const handleNext = () => {
-    if (currentIdx < quizQuestions.length - 1) setCurrentIdx(currentIdx + 1);
+    if (currentIdx < exerciseQuestions.length - 1)
+      setCurrentIdx(currentIdx + 1);
   };
 
   const handleQuit = () => {
-    router.push("/question"); // Reload the page
+    router.push("/question");
   };
 
-  const currentQuestion = quizQuestions[currentIdx];
-
-  // Hiển thị thời gian mm:ss
-  const formatTime = (sec: number) => {
-    const m = Math.floor(sec / 60)
-      .toString()
-      .padStart(2, "0");
-    const s = (sec % 60).toString().padStart(2, "0");
-    return `${m}:${s}`;
+  const handleReset = () => {
+    setSelectedAnswers({});
+    setShowResult({});
+    setCurrentIdx(0);
   };
+
+  const currentQuestion = exerciseQuestions[currentIdx];
 
   return (
-    <div className="h-screen bg-gradient-to-br from-blue-500 to-green-500 overflow-y-auto flex">
+    <div className="h-screen bg-gradient-to-br from-purple-600 to-blue-500 overflow-y-auto flex">
       <HeaderNav />
       <button
         className="fixed top-5 left-5 z-[99999] px-4 py-2 bg-gradient-to-br from-yellow-500 to-orange-500 text-white rounded hover:from-yellow-600 hover:to-orange-600 transition-colors cursor-pointer"
@@ -122,29 +74,20 @@ const QuizPage: React.FC = () => {
         {/* Left Card: List of Questions */}
         <div className="bg-white rounded-xl shadow-lg p-6 w-sm">
           <h2 className="text-xl font-bold mb-4 text-gray-800 text-center">
-            Danh sách câu hỏi
+            Danh sách câu hỏi (Exercise)
           </h2>
-          <div className="mb-4 text-center">
-            <span className="text-lg font-bold text-blue-600">
-              Thời gian còn lại: {formatTime(secondsLeft)}
-            </span>
-          </div>
           <ul className="space-y-2 grid grid-cols-5 gap-2">
-            {quizQuestions.map((q, idx) => (
+            {exerciseQuestions.map((q, idx) => (
               <li key={q.id}>
                 <button
                   className={`w-full px-4 py-2 rounded flex justify-center cursor-pointer
   ${
     idx === currentIdx
       ? "bg-blue-500 text-white font-bold"
-      : submitted
-      ? selectedAnswers[q.id]
-        ? selectedAnswers[q.id] === q.answer
-          ? "bg-green-500 text-white font-bold"
-          : "bg-red-500 text-white font-bold"
-        : "bg-gray-400 text-white font-bold"
       : selectedAnswers[q.id]
-      ? "bg-yellow-200 text-black font-bold"
+      ? selectedAnswers[q.id] === q.answer
+        ? "bg-green-500 text-white font-bold"
+        : "bg-red-500 text-white font-bold"
       : "bg-blue-100 text-black hover:bg-blue-200"
   }`}
                   onClick={() => handleQuestionClick(idx)}
@@ -154,13 +97,7 @@ const QuizPage: React.FC = () => {
               </li>
             ))}
           </ul>
-          {/* Show message only after submit attempt and if there are unanswered questions */}
-          {!submitted && Object.keys(showUnanswered).length > 0 && (
-            <div className="mt-2 text-red-600 font-bold">
-              *Bạn phải chọn đáp án cho tất cả câu hỏi trước khi nộp bài
-            </div>
-          )}
-          <div className="w-full justify-between mt-6 grid grid-cols-3 gap-4">
+          <div className="w-full justify-between mt-6 grid grid-cols-4 gap-2">
             <button
               className="px-4 py-2 bg-blue-500 rounded hover:bg-blue-600 font-bold disabled:hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
               onClick={handlePrev}
@@ -180,25 +117,22 @@ const QuizPage: React.FC = () => {
                 />
               </svg>
             </button>
-            {!submitted ? (
-              <button
-                className="w-full px-4 py-2 bg-gradient-to-br from-green-500 to-blue-500 text-white rounded hover:from-green-600 hover:to-blue-600 transition-colors font-bold"
-                onClick={handleSubmitAll}
-              >
-                Nộp bài
-              </button>
-            ) : (
-              <button
-                className="w-full px-4 py-2 bg-gradient-to-br from-orange-500 to-yellow-500 text-white rounded hover:from-orange-600 hover:to-yellow-600 transition-colors font-bold"
-                onClick={handleQuit}
-              >
-                Thoát
-              </button>
-            )}
+            <button
+              className="w-full px-4 py-2 bg-gradient-to-br from-orange-500 to-yellow-500 text-white rounded hover:from-orange-600 hover:to-yellow-600 transition-colors font-bold"
+              onClick={handleQuit}
+            >
+              Thoát
+            </button>
+            <button
+              className="w-full px-4 py-2 bg-gradient-to-br from-green-500 to-teal-500 text-white rounded hover:from-green-600 hover:to-teal-600 transition-colors font-bold"
+              onClick={handleReset}
+            >
+              Làm lại
+            </button>
             <button
               className="px-4 py-2 bg-blue-500 rounded hover:bg-blue-600 font-bold disabled:hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
               onClick={handleNext}
-              disabled={currentIdx === quizQuestions.length - 1}
+              disabled={currentIdx === exerciseQuestions.length - 1}
             >
               <svg
                 className="w-6 h-6 mx-auto text-white"
@@ -215,11 +149,6 @@ const QuizPage: React.FC = () => {
               </svg>
             </button>
           </div>
-          {submitted && (
-            <div className="mt-8 text-center text-2xl font-bold text-blue-900">
-              Tổng điểm: {score}
-            </div>
-          )}
         </div>
         {/* Right Card: Current Question */}
         <div className="bg-blue-100 rounded-xl shadow-lg p-6 flex flex-col items-center h-min md:col-span-2 w-3xl">
@@ -234,7 +163,19 @@ const QuizPage: React.FC = () => {
             {currentQuestion.options.map((option, idx) => (
               <label
                 key={`${option}-${idx}`}
-                className="block bg-white rounded-lg p-3 shadow cursor-pointer hover:bg-blue-200 transition-colors text-black"
+                className={`block bg-white rounded-lg p-3 shadow cursor-pointer hover:bg-blue-200 transition-colors text-black
+    ${
+      selectedAnswers[currentQuestion.id]
+        ? selectedAnswers[currentQuestion.id] === option
+          ? selectedAnswers[currentQuestion.id] === currentQuestion.answer
+            ? "border-2 border-green-500" // chọn đúng
+            : "border-2 border-red-500" // chọn sai
+          : option === currentQuestion.answer
+          ? "border-2 border-green-500" // hiển thị viền xanh cho đáp án đúng
+          : ""
+        : ""
+    }
+  `}
               >
                 <input
                   type="radio"
@@ -243,18 +184,13 @@ const QuizPage: React.FC = () => {
                   checked={selectedAnswers[currentQuestion.id] === option}
                   onChange={() => handleSelect(currentQuestion.id, option)}
                   className="mr-2 "
-                  disabled={submitted}
+                  disabled={!!selectedAnswers[currentQuestion.id]}
                 />
                 {option}
               </label>
             ))}
           </div>
-          {showUnanswered[currentQuestion.id] && !submitted && (
-            <div className="mt-2 text-red-600 font-bold">
-              *Bạn chưa chọn đáp án cho câu hỏi này
-            </div>
-          )}
-          {submitted && (
+          {showResult[currentQuestion.id] && (
             <div className="mt-3 font-semibold">
               {selectedAnswers[currentQuestion.id] ===
               currentQuestion.answer ? (
@@ -274,4 +210,4 @@ const QuizPage: React.FC = () => {
   );
 };
 
-export default QuizPage;
+export default ExercisePage;
