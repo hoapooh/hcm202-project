@@ -85,7 +85,7 @@ const FirstSection = () => {
 									sớm nhận thấy muốn giành độc lập dân tộc cần có một đảng tiên phong lãnh đạo.
 								</p>
 							}
-							revealSize={400}
+							revealSize={700}
 							className="max-h-60 w-full text-white/90 dark:text-black font-bangers text-left mt-20"
 						>
 							<span className="text-red-500">Đảng Cộng sản Việt Nam</span> vừa là đội tiên phong của
