@@ -1,6 +1,7 @@
 import React from "react";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import { Boxes } from "../ui/background-boxes";
+import { PointerHighlight } from "../ui/pointer-highlight";
 
 const ThirdSection = () => {
 	return (
@@ -10,7 +11,7 @@ const ThirdSection = () => {
 				<div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 				{/* https://bna.1cdn.vn/2024/08/15/e.baonghean.vn-wp-content-uploads-2021-09-_tranh-ve-cao-trao-xo-viet-nghe-tinh-cua-tac-gia-nguyen-duc-nung-1.jpg */}
 				<img
-					src="https://bna.1cdn.vn/2024/08/15/e.baonghean.vn-wp-content-uploads-2021-09-_tranh-ve-cao-trao-xo-viet-nghe-tinh-cua-tac-gia-nguyen-duc-nung-1.jpg"
+					src="https://images.hcmcpv.org.vn/res/news/2020/01/11-01-2020-chu-tich-ho-chi-minh-nguoi-sang-lap-ren-luyen-dang-cong-san-viet-nam-B7F54E7B.jpg"
 					alt="Background image"
 					className="w-full h-full object-cover rounded-lg"
 				/>
@@ -19,14 +20,6 @@ const ThirdSection = () => {
 
 			{/* Main content container */}
 			<div className="relative z-30 h-full w-full flex flex-col items-center justify-center px-8 py-20 pointer-events-none">
-				{/* Section title */}
-				<div className="text-center mb-12">
-					<h2 className="text-5xl md:text-6xl font-bold text-white/95 font-bangers mb-4">
-						Kết Luận
-					</h2>
-					<div className="w-32 h-1 bg-gradient-to-r from-red-500 to-yellow-500 mx-auto rounded-full" />
-				</div>
-
 				{/* Quote card */}
 				<div className="max-w-4xl w-full mb-8">
 					<div className="relative bg-black/70 backdrop-blur-md border border-red-500/30 rounded-2xl p-8 shadow-2xl">
@@ -40,14 +33,21 @@ const ThirdSection = () => {
 								Đảng ta là đạo đức, là văn minh
 							</blockquote>
 
-							<p className="text-lg text-white/95 leading-relaxed text-center font-medium drop-shadow-md">
+							<div className="text-lg text-white/95 text-center font-medium drop-shadow-md leading-9">
 								Người khẳng định, chỉ có{" "}
-								<span className="font-bold text-red-300 bg-red-900/30 px-2 py-1 rounded">
-									Đảng Cộng sản Việt Nam
+								<span className="relative inline-block">
+									<PointerHighlight
+										pointerClassName="text-red-500 size-3"
+										rectangleClassName="bg-red-900 border dark:border-red-500 leading-loose rounded-sm"
+										containerClassName="inline-block leading-7"
+										// className="font-bold  bg-red-900/30 px-2 py-1 rounded"
+									>
+										<span className="relative z-10 font-bold">Đảng Cộng sản Việt Nam</span>
+									</PointerHighlight>
 								</span>{" "}
 								– đội tiên phong của giai cấp công nhân và dân tộc – mới đủ bản lĩnh và trí tuệ để
 								lãnh đạo cách mạng đi đến thắng lợi cuối cùng.
-							</p>
+							</div>
 
 							{/* Quote mark */}
 							<div className="absolute -bottom-4 -right-4 text-6xl text-red-500 font-serif drop-shadow-lg">
@@ -71,16 +71,28 @@ const ThirdSection = () => {
 								<span className="text-yellow-400">★</span>
 							</h3>
 
-							<p className="text-lg md:text-xl text-white leading-relaxed font-medium drop-shadow-md">
-								<span className="font-bold text-red-300 bg-red-900/40 px-2 py-1 rounded">
-									Sự lãnh đạo của Đảng Cộng sản Việt Nam là một tất yếu
-								</span>
-								, vai trò lãnh đạo của Đảng cũng là một tất yếu - điều đó xuất phát từ
-								<span className="font-bold text-yellow-300 bg-yellow-900/40 px-2 py-1 rounded ml-1">
-									yêu cầu phát triển của dân tộc Việt Nam
-								</span>
+							<div className="text-lg md:text-xl text-white font-medium drop-shadow-md leading-12">
+								<PointerHighlight
+									pointerClassName="text-red-500 size-3"
+									rectangleClassName="bg-red-900 border dark:border-red-500 leading-loose rounded-sm"
+									containerClassName="inline-block leading-7"
+								>
+									<span className="relative z-10 font-bold">
+										Sự lãnh đạo của Đảng Cộng sản Việt Nam là một tất yếu
+									</span>
+								</PointerHighlight>
+								, vai trò lãnh đạo của Đảng cũng là một tất yếu - điều đó xuất phát từ{" "}
+								<PointerHighlight
+									pointerClassName="text-yellow-500 size-3"
+									rectangleClassName="bg-yellow-900 border dark:border-yellow-700 leading-loose rounded-sm"
+									containerClassName="inline-block leading-7"
+								>
+									<span className="relative z-10 font-bold">
+										yêu cầu phát triển của dân tộc Việt Nam
+									</span>
+								</PointerHighlight>
 								.
-							</p>
+							</div>
 						</div>
 					</HoverBorderGradient>
 				</div>

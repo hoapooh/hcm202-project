@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@botpress/webchat": "^3.2.8",
     "@radix-ui/react-hover-card": "^1.1.15",
     "@react-three/fiber": "^9.0.0-alpha.8",
     "@tsparticles/engine": "^3.9.1",
@@ -19,7 +20,7 @@
     "gsap": "^3.13.0",
     "lucide-react": "^0.544.0",
     "mini-svg-data-uri": "^1.4.4",
-    "motion": "^12.23.18",
+    "motion": "^12.23.16",
     "next": "15.5.3",
     "qss": "^3.0.0",
     "react": "19.1.0",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/luxon": "^3.7.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
