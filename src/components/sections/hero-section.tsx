@@ -52,6 +52,7 @@ const HeroSection = () => {
 					Tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam và Nhà nước của nhân dân, do nhân dân, vì
 					nhân dân
 				</p>
+				<p className="text-white text-3xl text-center w-full font-medium font-bangers">LO3, LO4, LO6, LO8</p>
 			</div>
 			<Mouse className="absolute bottom-16 size-12 animate-bounce text-white left-1/2 transform -translate-x-1/2" />
 			<ChevronsDown className="absolute bottom-4 size-12 animate-bounce text-white left-1/2 transform -translate-x-1/2" />

@@ -106,7 +106,13 @@ export function FifthSection() {
 
 			{/* Modal hiển thị Card 3D */}
 			{selectedItem && (
-				<div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/70 p-4">
+				<div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/70 p-4"
+				onClick={e => {
+					if (e.target === e.currentTarget) {
+						setSelectedItem(null);
+					}
+				}}
+				>
 					<div className="absolute top-5 right-5 z-[99999]">
 						<button
 							onClick={() => setSelectedItem(null)}

@@ -133,7 +133,7 @@ export const SixteenSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-12 text-center"
           >
-            <div className="bg-gradient-to-r from-yellow-500/20 to-red-500/20 backdrop-blur-md border border-yellow-400/30 rounded-2xl p-6 max-w-2xl mx-auto">
+            <div className="bg-gradient-to-r from-yellow-500/20 to-red-500/20 backdrop-blur-md border border-yellow-400/30 rounded-2xl p-6 max-w-4xl mx-auto">
               <h4 className="text-xl font-bold text-yellow-400 mb-3">Kết luận</h4>
               <p className="text-lg text-white leading-relaxed">
                 Việc vận dụng sáng tạo tư tưởng Hồ Chí Minh về xây dựng đội ngũ cán bộ 
