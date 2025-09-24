@@ -14,6 +14,11 @@ import { ThirteenSection } from "@/components/sections/thirteen-section";
 import { FourteenSection } from "@/components/sections/fourteen-section";
 import { FifteenSection } from "@/components/sections/fifteen-section";
 import { SixteenSection } from "@/components/sections/sixteen-section";
+import { SixSection } from "@/components/sections/six-section";
+import { SevenSection } from "@/components/sections/seven-section";
+import { EightSection } from "@/components/sections/eight-section";
+import { NineSection } from "@/components/sections/nine-section";
+import { TwentySection } from "@/components/sections/twenty-section";
 import ThirdSection from "@/components/sections/third-section";
 import HeaderNav from "@/components/navigation/header-nav";
 import { useRouter } from "next/navigation";
@@ -72,6 +77,10 @@ export default function Home() {
 				<ThirdSection />
 				<FourthSection />
 				<FifthSection />
+				<SixSection />
+				<SevenSection />
+				<EightSection />
+				<NineSection />
 				<TenSection />
 				<ElevenSection />
 				<TwelveSection />
@@ -79,6 +88,7 @@ export default function Home() {
 				<FourteenSection />
 				<FifteenSection />
 				<SixteenSection />
+				<TwentySection />
 			</div>
 
 			{/* Floating Action Buttons - Fixed Position */}

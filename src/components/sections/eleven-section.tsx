@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { CometCard } from "../ui/comet-card";
 import { DraggableCardContainer } from "../ui/draggable-card";
-
+import { Highlight } from "../ui/hero-highlight";
 export const ElevenSection = () => {
   return (
     <section className="relative w-full min-h-screen snap-start overflow-hidden">
@@ -30,19 +30,29 @@ export const ElevenSection = () => {
             transition={{ duration: 1 }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              "Cái gốc của mọi công việc"
-            </h2>
-            <h3 className="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4">
+            <h2 className="text-5xl md:text-6xl font-bold text-yellow-400 mb-6">
               Vị trí, vai trò của cán bộ, đảng viên
-            </h3>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-              Chủ tịch Hồ Chí Minh khẳng định cán bộ là "cái gốc của mọi công việc"
-            </p>
+            </h2>
           </motion.div>
-
+          {/* Bottom Quote */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-[-44px] text-center"
+          >
+            <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 backdrop-blur-md border border-yellow-400/30 rounded-2xl p-8 max-w-7xl mx-auto mb-10">
+              <h4 className="text-2xl font-bold text-yellow-400 mb-4">Lời dạy của Bác Hồ</h4>
+              <blockquote className="text-xl text-white italic leading-relaxed">
+                Cán bộ là <Highlight>cái gốc của mọi công việc</Highlight>. Muốn làm việc gì thành công, 
+                trước tiên phải có cán bộ tốt
+              </blockquote>
+              <cite className="text-gray-300 mt-4 block">— Hồ Chí Minh</cite>
+            </div>
+          </motion.div>
           {/* Main Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pb-16">
             
             {/* Left Side - Content Cards */}
             <motion.div
@@ -117,26 +127,9 @@ export const ElevenSection = () => {
                 </DraggableCardContainer>
             </motion.div>
           </div>
-
-          {/* Bottom Quote */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-16 text-center"
-          >
-            <div className="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 backdrop-blur-md border border-yellow-400/30 rounded-2xl p-8 max-w-4xl mx-auto">
-              <h4 className="text-2xl font-bold text-yellow-400 mb-4">Lời dạy của Bác Hồ</h4>
-              <blockquote className="text-xl text-white italic leading-relaxed">
-                "Cán bộ là cái gốc của mọi công việc. Muốn làm việc gì thành công, 
-                trước tiên phải có cán bộ tốt"
-              </blockquote>
-              <cite className="text-gray-300 mt-4 block">— Hồ Chí Minh</cite>
-            </div>
-          </motion.div>
+          </div>
+         
         </div>
-      </div>
     </section>
   );
 };
